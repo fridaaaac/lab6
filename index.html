@@ -1,9 +1,36 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
   <title>Monetary Exchange Rate</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Monetary Exchange Rate</h1>
-  <p>1 USD = <span id="cad"></span> CAD</p>
+  <main class="page">
+    <p class="page-title">Monetary Exchange Rate</p>
+
+    <h1 class="subtitle">1 US dollar buys</h1>
+
+    <p class="rate">
+      <span class="number" id="cad">&mdash;</span>
+      <span class="unit">CAD</span>
+    </p>
+
+    <p class="updated">Canadian dollars &middot; updated <span id="time">now</span></p>
+
+    <ul class="other">
+      <li>
+        <span class="unit">EUR</span>
+        <span class="number" id="eur">&mdash;</span>
+      </li>
+      <li>
+        <span class="unit">GBP</span>
+        <span class="number" id="gbp">&mdash;</span>
+      </li>
+    </ul>
+
+    <p class="source">Data from <a href="https://currencylayer.com/">currencylayer</a></p>
+  </main>
+
   <script src="api.js"></script>
 </body>
+</html>
